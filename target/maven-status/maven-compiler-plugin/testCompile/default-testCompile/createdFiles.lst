@@ -1,0 +1,3 @@
+uitests\SmokeTest.class
+uitests\BaseTest.class
+actions\UIActions.class

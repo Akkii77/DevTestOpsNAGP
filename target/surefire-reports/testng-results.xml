@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="7" total="8" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href= 'C:/Users/akash.saha/OneDrive - Nagarro/Akash_Saha_3157310_HOME ASSIGNMENT - NAGP 2022 QA Batch Workshop on Selenium Automation/SeleniumAutomationProject/screenshots/verifyAmazonHomepage_Test2022-07-18-12-04-57.png'target='_blank' ><img src='C:/Users/akash.saha/OneDrive - Nagarro/Akash_Saha_3157310_HOME ASSIGNMENT - NAGP 2022 QA Batch Workshop on Selenium Automation/SeleniumAutomationProject/screenshots/verifyAmazonHomepage_Test2022-07-18-12-04-57.png'>verifyAmazonHomepage_Test2022-07-18-12-04-57</a>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-07-18T12:04:46 IST" name="Suite" finished-at="2022-07-18T12:05:01 IST" duration-ms="15749">
+    <groups>
+    </groups>
+    <test started-at="2022-07-18T12:04:46 IST" name="Amazon application Smoke test" finished-at="2022-07-18T12:05:01 IST" duration-ms="15749">
+      <class name="uitests.SmokeTest">
+        <test-method is-config="true" signature="before()[pri:0, instance:uitests.SmokeTest@33308786]" started-at="2022-07-18T12:04:45 IST" name="before" finished-at="2022-07-18T12:04:46 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="driversetup()[pri:0, instance:uitests.SmokeTest@33308786]" started-at="2022-07-18T12:04:46 IST" name="driversetup" finished-at="2022-07-18T12:04:50 IST" duration-ms="4443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driversetup -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:uitests.SmokeTest@33308786]" started-at="2022-07-18T12:04:50 IST" name="initializePages" finished-at="2022-07-18T12:04:50 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="verifyAmazonHomepage_Test()[pri:0, instance:uitests.SmokeTest@33308786]" started-at="2022-07-18T12:04:50 IST" name="verifyAmazonHomepage_Test" description="Verify Home Page of Amazon application" finished-at="2022-07-18T12:04:57 IST" duration-ms="7137" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"[data-nav-ref='nav_ya_signingg']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'NAG6AKASHSAH01', ip: '192.168.29.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e55768ce5ccab581e1c1e2c4cf5b61d4, findElement {using=css selector, value=[data-nav-ref='nav_ya_signingg']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\AKASH~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:50738}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50738/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e55768ce5ccab581e1c1e2c4cf5b61d4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-nav-ref='nav_ya_signingg']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'NAG6AKASHSAH01', ip: '192.168.29.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e55768ce5ccab581e1c1e2c4cf5b61d4, findElement {using=css selector, value=[data-nav-ref='nav_ya_signingg']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\AKASH~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:50738}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50738/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e55768ce5ccab581e1c1e2c4cf5b61d4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at base.BasePage.waitForElementToBeClickable(BasePage.java:311)
+at pages.HomePage.verifySignInButton(HomePage.java:81)
+at uitests.SmokeTest.verifyAmazonHomepage_Test(SmokeTest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAmazonHomepage_Test -->
+        <test-method is-config="true" signature="afterMainMethod(org.testng.ITestResult)[pri:0, instance:uitests.SmokeTest@33308786]" started-at="2022-07-18T12:04:57 IST" name="afterMainMethod" finished-at="2022-07-18T12:05:01 IST" duration-ms="3491" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAmazonHomepage_Test status=FAILURE method=SmokeTest.verifyAmazonHomepage_Test()[pri:0, instance:uitests.SmokeTest@33308786] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href= 'C:/Users/akash.saha/OneDrive - Nagarro/Akash_Saha_3157310_HOME ASSIGNMENT - NAGP 2022 QA Batch Workshop on Selenium Automation/SeleniumAutomationProject/screenshots/verifyAmazonHomepage_Test2022-07-18-12-04-57.png'target='_blank' ><img src='C:/Users/akash.saha/OneDrive - Nagarro/Akash_Saha_3157310_HOME ASSIGNMENT - NAGP 2022 QA Batch Workshop on Selenium Automation/SeleniumAutomationProject/screenshots/verifyAmazonHomepage_Test2022-07-18-12-04-57.png'>verifyAmazonHomepage_Test2022-07-18-12-04-57</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMainMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:uitests.SmokeTest@33308786]" started-at="2022-07-18T12:05:01 IST" name="tearDown" finished-at="2022-07-18T12:05:01 IST" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- uitests.SmokeTest -->
+    </test> <!-- Amazon application Smoke test -->
+  </suite> <!-- Suite -->
+</testng-results>

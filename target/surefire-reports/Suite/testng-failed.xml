@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="1" parallel="methods" name="Amazon application Smoke test(failed)" verbose="0">
+    <classes>
+      <class name="uitests.SmokeTest">
+        <methods>
+          <include name="before"/>
+          <include name="verifyAmazonHomepage_Test"/>
+          <include name="tearDown"/>
+          <include name="initializePages"/>
+          <include name="afterMainMethod"/>
+          <include name="driversetup"/>
+        </methods>
+      </class> <!-- uitests.SmokeTest -->
+    </classes>
+  </test> <!-- Amazon application Smoke test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

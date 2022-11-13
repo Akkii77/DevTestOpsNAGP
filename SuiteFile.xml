@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="1">
+
+	<test name="Amazon application Smoke test">
+		<classes>
+			<class
+				name="uitests.SmokeTest">
+				<methods>
+				    <include name= "verifyAmazonHomepage_Test"/>
+				   <!--    <include name = "verifySigninPage_Test"/>
+				     <include name = "verifyHamburgerMenu_Test"/> 
+				    <include name = "verifyYourAccountPage_Test"/>  
+				    <include name = "searchMobilePhones"/> 
+				    <include name = "verifyCreateAmazonAccountPage_Test"/> 
+				    <include name = "verifyIncorrectMobileNumberOnSignIN_Test"/>
+				    <include name = "verifyFooterSocialLinks_Test"/>    -->
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
