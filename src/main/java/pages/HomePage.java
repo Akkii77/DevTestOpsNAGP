@@ -21,7 +21,7 @@ public class HomePage extends BasePage {
 	private static Logger Log = LogManager.getLogger(HomePage.class.getName());
 
 	private By HomePageIcon = By.cssSelector("[aria-label='Amazon']");
-	private By SigninBtn = By.cssSelector("[data-nav-ref='nav_ya_signingg']");
+	private By SigninBtn = By.cssSelector("[data-nav-ref='nav_ya_signin']");
 	private By SigninHeading = By.xpath("//h1[contains(text(),'Sign-In')]");
 	private By InputEmailField = By.cssSelector("#ap_email");
 	private By SubmitBtn = By.cssSelector("input#continue");
