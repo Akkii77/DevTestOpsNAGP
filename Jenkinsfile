@@ -31,7 +31,7 @@ pipeline{
         {
           withSonarQubeEnv("Test_Sonar")
           {
-            bat "mvn clean package sonar:sonar"
+            bat "mvn sonar:sonar"
           }
         }
       }
