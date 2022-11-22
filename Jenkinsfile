@@ -4,15 +4,19 @@ pipeline{
       maven "Maven"
   }
   stages{
-      stage('checkout')
+      stage("checkout")
       {
         steps
         {
           checkout scm
         }
       }
-       stage('Build')
+       stage("Build")
       {
+        steps
+        {
+          sh "mvn clean"
+        }
         steps
         {
           sh "mvn install"
