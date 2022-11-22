@@ -15,8 +15,7 @@ pipeline{
       {
         steps
         {
-          sh "mvn clean"
-          sh "mvn install"
+          sh "echo build"
         }
         
       }
@@ -24,7 +23,7 @@ pipeline{
       {
         steps
         {
-          sh "mvn test"
+          sh "echo Test"
         }
       }
        stage('Sonar Analysis')
