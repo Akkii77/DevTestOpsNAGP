@@ -1,28 +1,39 @@
 pipeline{
   agent any
+  tools{
+      maven "Maven"
+  }
   stages{
-      stage("checkout")
+      stage('checkout')
       {
         steps
         {
           checkout scm
         }
       }
-       stage("Build")
+       stage('Build')
       {
         steps
         {
-          sh "echo build"
+          bat "mvn clean"
         }
-        
       }
        stage('Unit Testing')
       {
         steps
         {
-          sh "echo Test"
+          bat "mvn test"
         }
       }
-       
+      stage('Sonar Analysis')
+      {
+        steps
+        {
+          withSonarQubeEnv("Test _Sonar")
+          {
+            sh "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar"
+          }
+        }
+      }
   }
 }
