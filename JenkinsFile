@@ -8,32 +8,23 @@ pipeline{
       {
         steps
         {
-          checkout scm
+          sh "echo checkout"
         }
       }
        stage('Build')
       {
         steps
         {
-          sh "mvn install"
+           sh "echo Build"
         }
       }
        stage('Unit Testing')
       {
         steps
         {
-          sh "mvn test"
+           sh "echo Test"
         }
       }
-       stage('Sonar Analysis')
-      {
-        steps
-        {
-          withSonarQubeEnv("Test _Sonar")
-          {
-            sh "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar"
-          }
-        }
       }
   }
 }
