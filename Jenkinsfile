@@ -39,20 +39,24 @@ pipeline{
 	  {
 		steps
 		{
-			rtMavenDeployer {
+			rtMavenDeployer 
+			{
 				id: 'deployer',
 				serverId: '123456789@artifactory',
 				releaseRepo: 'akash.nagp2022',
 				snapshotRepo: 'akash.nagp2022'
-				}
-			rtMavenRun {
+			}
+			rtMavenRun 
+			{
 				pom: 'pom.xml',
 				goals: 'clean install',
 				deployerId: 'deployer'
-				}
-			rtPublishBuildInfo {
+			}
+			rtPublishBuildInfo 
+			{
 				serverId: '123456789@artifactory'
-		}		}
+		}	}
 	  }
   }
 }
+
