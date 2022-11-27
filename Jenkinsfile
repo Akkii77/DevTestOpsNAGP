@@ -40,7 +40,7 @@ pipeline{
 		steps
 		{
 			rtMavenDeployer {
-				id: "deployer",
+				id: "deployer"
 				serverId: "123456789@artifactory",
 				releaseRepo: "akash.nagp2022",
 				snapshotRepo: "akash.nagp2022"
