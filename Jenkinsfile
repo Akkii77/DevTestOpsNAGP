@@ -51,7 +51,7 @@ pipeline{
 				deployerId: 'deployer'
 				}
 			rtPublishBuildInfo {
-				serverId: 123456789@artifactory
+				serverId: '123456789@artifactory'
 		}		}
 	  }
   }
