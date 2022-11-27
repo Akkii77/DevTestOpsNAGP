@@ -35,5 +35,24 @@ pipeline{
           }
         }
       }
+	  stage('Upload to Artifactory')
+	  {
+		steps
+		{
+			rtMavenDeployer {
+				id: 'deployer',
+				ServerId: '123456789@artifactory',
+				releaseRepo: 'akash.nagp2022',
+				snapshotRepo: 'akash.nagp2022'
+				}
+			rtMavenRun {
+				pom: 'pom.xml',
+				goals: 'clean install'
+				deployerId: 'deployer',
+				}
+			rtPublishBuildInfo {
+				serverId: 123456789@artifactory
+		}		}
+	  }
   }
 }
